@@ -94,6 +94,10 @@ namespace DiagramToolkit
             canvas2.Name = "Untitled-2";
             this.editor.AddCanvas(canvas2);
 
+            ICanvas canvas3 = new DefaultCanvas();
+            canvas3.Name = "Untitled-3";
+            this.editor.AddCanvas(canvas3);
+
             #endregion
 
             #region Commands
