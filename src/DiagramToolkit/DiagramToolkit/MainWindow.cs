@@ -183,40 +183,6 @@ namespace DiagramToolkit
 
             #endregion
 
-            //#region Colorbar
-
-            //// Initializing toolbox
-            //Debug.WriteLine("Loading toolbox...");
-            //this.colorbar = new DefaultToolbox();
-            //this.toolStripContainer1.BottomToolStripPanel.Controls.Add((Control)this.colorbar);
-            //this.editor.Toolbox = toolbox;
-
-            //#endregion
-
-            //#region Colors
-
-            //// Initializing tools
-            //Debug.WriteLine("Loading colors...");
-            //this.colorbar.AddTool(new SelectionTool());
-            //this.colorbar.AddSeparator();
-            //this.colorbar.AddTool(new LineTool());
-            //this.colorbar.AddTool(new RectangleTool());
-            //this.colorbar.AddTool(new PinkColorTool());
-
-            //if (plugins != null)
-            //{
-            //    for (int i = 0; i < this.plugins.Length; i++)
-            //    {
-            //        this.colorbar.Register(plugins[i]);
-            //    }
-            //}
-
-            //this.colorbar.ToolSelected += Toolbox_ToolSelected;
-
-
-
-            //#endregion
-
             #region Toolbar
 
             // Initializing toolbar
