@@ -36,7 +36,7 @@ namespace DiagramToolkit.Shapes
 
         public override void RenderOnStaticView()
         {
-            pen.Color = Color.Black;
+            pen.Color = this.CurrentColor;
             pen.Width = 1.5f;
             pen.DashStyle = DashStyle.Solid;
 
@@ -108,6 +108,11 @@ namespace DiagramToolkit.Shapes
         public override bool Remove(DrawingObject obj)
         {
             return false;
+        }
+
+        public override void Accept(IVisitor visitor)
+        {
+            visitor.Visit(this);
         }
     }
 }

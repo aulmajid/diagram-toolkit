@@ -201,6 +201,10 @@ namespace DiagramToolkit
                 drawObj.Deselect();
             }
         }
-        
+
+        public void Accept(IVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
     }
 }

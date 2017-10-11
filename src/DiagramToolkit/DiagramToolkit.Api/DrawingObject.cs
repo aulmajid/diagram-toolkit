@@ -1,12 +1,11 @@
 ﻿using DiagramToolkit.States;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 
 namespace DiagramToolkit
 {
-    public abstract class DrawingObject
+    public abstract class DrawingObject : IVisitable
     {
         public Guid ID { get; set; }
 
@@ -18,6 +17,8 @@ namespace DiagramToolkit
             }
         }
 
+        public Color CurrentColor { get; set; }
+
         private DrawingState state;
         private Graphics graphics;
 
@@ -25,6 +26,7 @@ namespace DiagramToolkit
         {
             ID = Guid.NewGuid();
             this.ChangeState(PreviewState.GetInstance()); //default initial state
+            this.CurrentColor = Color.Black;
         }
 
         public abstract bool Add(DrawingObject obj);
@@ -69,5 +71,6 @@ namespace DiagramToolkit
             this.state.Deselect(this);
         }
 
+        public abstract void Accept(IVisitor visitor);
     }
 }

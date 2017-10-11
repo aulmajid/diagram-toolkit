@@ -83,7 +83,7 @@ namespace DiagramToolkit.Tools
         {
             Text text = new Text();
             text.Value = "Untitled";
-            selectedObject.Add(text);
+            //selectedObject.Add(text);
             Debug.WriteLine("selection tool double click");
         }
 

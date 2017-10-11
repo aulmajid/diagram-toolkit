@@ -91,7 +91,23 @@
     <Compile Include="Tools\LineTool.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Tools\GreenColorTool.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\YellowColorTool.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\BlackColorTool.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visitors\YellowVisitor.cs" />
+    <Compile Include="Visitors\GreenVisitor.cs" />
+    <Compile Include="Visitors\BlackVisitor.cs" />
+    <Compile Include="Visitors\PinkVisitor.cs" />
     <Compile Include="Tools\RectangleTool.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\PinkColorTool.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Tools\SelectionTool.cs">
@@ -118,6 +134,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Tools\GreenColorTool.resx">
+      <DependentUpon>GreenColorTool.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

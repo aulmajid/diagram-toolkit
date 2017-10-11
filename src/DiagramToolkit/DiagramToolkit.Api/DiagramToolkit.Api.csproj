@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IVisitable.cs" />
+    <Compile Include="IVisitor.cs" />
     <Compile Include="DrawingObject.cs" />
     <Compile Include="DrawingState.cs" />
     <Compile Include="ICanvas.cs" />

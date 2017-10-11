@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DiagramToolkit
 {
-    public interface ICanvas
+    public interface ICanvas : IVisitable
     {
         String Name { get; set; }
         ITool GetActiveTool();

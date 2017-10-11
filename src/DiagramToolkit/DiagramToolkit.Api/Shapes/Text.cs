@@ -68,5 +68,10 @@ namespace DiagramToolkit.Shapes
             X += xAmount;
             Y += yAmount;
         }
+
+        public override void Accept(IVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
     }
 }
